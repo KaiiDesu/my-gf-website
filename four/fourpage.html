@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GF Portfolio</title>
+    <link rel="stylesheet" href="fourstyle.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Kaikai's Message</h1>
+    </div>
+    
+    <div class="container">
+        <div class="left-images">
+            <img src="Images/upleft.jpg" alt="Image 1" class="side-img">
+            <img src="Images/botleft.jpg" alt="Image 2" class="side-img">
+        </div>
+        
+        <div class="text-box">
+            <p>Life hasn’t always been easy, but having you by my side has made every challenge feel surmountable. I remember the moments when things felt heavy, when the world seemed overwhelming, and yet, you were there—steady, strong, and unwavering. Your support during those times meant more to me than words can express. You held my hand when I needed it most, reminded me of my strength when I doubted myself, and showed me that even in the darkest moments, love can be a guiding light. Those hard times didn’t break us; they brought us closer, and for that, I’m so grateful.</p>
+        </div>
+        
+        <div class="right-image">
+            <img src="Images/upright.jpg" alt="Image 3" class="side-img">
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <button onclick="nextPage()">Next Page</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        function nextPage() { 
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.8 }
+            });
+
+            setTimeout(function() {
+                window.location.href = "/five/fivepage.html";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

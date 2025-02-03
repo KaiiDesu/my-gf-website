@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Website for My GF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gif-left">
+            <img src="images/gif1.gif" alt="GIF Left">
+        </div>
+
+        <div class="content-box">
+            <h1>A Website for My GF!!!</h1>
+            <p class="subtitle">Be ready to witness the most precious and beautiful website</p>
+            <p class="subtitle">that I've made special just for you!!!</p>
+            <button id="readyButton" onclick="redirectToHome1()">Are you Ready?</button>
+            <p id="response"></p>
+        </div>
+
+        <div class="gif-right">
+            <img src="images/gif2.gif" alt="GIF Right">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        function nextPage() { 
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.8 }
+            });
+
+            setTimeout(function() {
+                window.location.href = "1/home1.html";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

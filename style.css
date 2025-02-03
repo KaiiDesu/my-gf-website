@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(images/gfbg.png);
+    background-position: center;
+    background-color: #ffebee; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 90%;
+    text-align: center;
+}
+
+/* GIF IMAGE STYLING */
+.gif-left, .gif-right {
+    width: 200px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif-left img, .gif-right img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CENTERED CONTENT */
+.content-box {
+    background-image: url(images/gfbg.png);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitle {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#readyButton {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #f9f9f9; /* Green for the button */
+    color: #424242;
+    border-radius: 25px;
+    box-shadow: -6px -6px 10px #f9f9f9,
+                6px 6px 10px #000026;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#readyButton:hover {
+    box-shadow: 2px 2px 2px #f9f9f9,
+                -2px -2px 2px #000026;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white; /* White text color */
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .gif-left, .gif-right {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GF Portfolio</title>
+    <link rel="stylesheet" href="fivestyle.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Kaikai's Message</h1>
+    </div>
+    
+    <div class="container">
+        <div class="left-images">
+            <img src="/five/Images/upleft.jpeg " alt="Image 1" class="side-img">
+            <img src="/five/Images/botleft.jpeg" alt="Image 2" class="side-img">
+        </div>
+        
+        <div class="text-box">
+            <p>Now, every day with you feels like a dream I never want to wake up from. You’ve become my best friend, my confidant, and my greatest source of joy. I’m constantly in awe of your beauty—not just the kind that takes my breath away when I look at you, but the kind that shines through in the way you love, the way you care, and the way you make the world a better place just by being in it. You’ve taught me so much about patience, kindness, and what it means to truly love someone. I’m so proud of the person you are and everything you’ve accomplished, and I feel so lucky to be the one who gets to stand by your side.</p>
+        </div>
+        
+        <div class="right-image">
+            <img src="/five/Images/upright.jpeg" alt="Image 3" class="side-img">
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <button onclick="nextPage()">Next Page</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        function nextPage() { 
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.8 }
+            });
+
+            setTimeout(function() {
+                window.location.href = "/six/sixpage.html";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

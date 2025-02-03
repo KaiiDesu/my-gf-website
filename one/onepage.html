@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GF Portfolio</title>
+    <link rel="stylesheet" href="onestyle.css">
+</head>
+<body>
+    <div class="header">
+        <div class="h1">
+            <h1>Kaikai's Message</h1>
+        </div>
+    </div>
+    <div class="container">
+        <img src="/images/1bb.jpeg" alt="Kristina" class="profile-pic">
+        <div class="description">
+            <p>My Girlfriend, Kristina is a rare gem, seamlessly blending unparalleled beauty, a radiant personality, and a heart of gold. She excels in making the world a better place, one smile at a time, and has mastered the art of being the perfect partner, best friend, and source of endless inspiration.</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="nextPage()">Next Page</button>
+    </div>
+
+    <!-- ✅ Add Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        function nextPage() { 
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.79 }
+            });
+
+            setTimeout(function() {
+                window.location.href = "/two/twopage.html";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

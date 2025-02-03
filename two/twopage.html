@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GF Portfolio</title>
+    <link rel="stylesheet" href="twostyle.css">
+</head>
+<body>
+    <div class="header">
+        <div class="h1">
+            <h1>Kaikai's Message</h1>
+        </div>
+    </div>
+    <div class="container">
+        <img src="/images/2bb.jpeg" alt="Kristina" class="profile-pic">
+        <div class="description">
+            <p>And as I got to know you, I fell in love with every little thing about you. The way your laugh sounds like music, the way your eyes light up when you talk about something you’re passionate about, the way you bite your lip when you’re deep in thought. I love the way you care for others, how you go out of your way to make people feel seen and valued. I love how strong you are, how you face challenges with grace and determination, and how you never let the world harden your heart.</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="nextPage()">Next Page</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script>
+        function nextPage() { 
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.9 }
+            });
+
+            setTimeout(function() {
+                window.location.href = "/home1.html";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
