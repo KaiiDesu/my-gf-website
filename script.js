@@ -15,7 +15,7 @@ function redirectToHome1() {
     console.log("Redirecting to home1.html..."); // Debugging log
 
     setTimeout(function() {
-        window.location.href = "one/onepage.html";
+        window.location.href = "on/onepage.html";
     }, 2000);
 }
 
